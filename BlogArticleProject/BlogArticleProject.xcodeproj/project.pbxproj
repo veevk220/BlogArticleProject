@@ -29,6 +29,15 @@
 		9C9CEB4524B318BB00C2EEAF /* MediaEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB3F24B318BB00C2EEAF /* MediaEntity+CoreDataProperties.swift */; };
 		9C9CEB4624B318BB00C2EEAF /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB4024B318BB00C2EEAF /* UserEntity+CoreDataProperties.swift */; };
 		9C9CEB4924B3192000C2EEAF /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB4824B3192000C2EEAF /* Article.swift */; };
+		9C9CEB4B24B31B3E00C2EEAF /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB4A24B31B3C00C2EEAF /* PageViewModel.swift */; };
+		9C9CEB5724B31B6800C2EEAF /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB4E24B31B6800C2EEAF /* UserEntity+CoreDataClass.swift */; };
+		9C9CEB5824B31B6800C2EEAF /* MediaEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB4F24B31B6800C2EEAF /* MediaEntity+CoreDataClass.swift */; };
+		9C9CEB5924B31B6800C2EEAF /* ArticleEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB5024B31B6800C2EEAF /* ArticleEntity+CoreDataProperties.swift */; };
+		9C9CEB5A24B31B6800C2EEAF /* MediaEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB5124B31B6800C2EEAF /* MediaEntity+CoreDataProperties.swift */; };
+		9C9CEB5B24B31B6800C2EEAF /* BlogArticleProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB5224B31B6800C2EEAF /* BlogArticleProject.xcdatamodeld */; };
+		9C9CEB5C24B31B6800C2EEAF /* ArticleEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB5424B31B6800C2EEAF /* ArticleEntity+CoreDataClass.swift */; };
+		9C9CEB5D24B31B6800C2EEAF /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB5524B31B6800C2EEAF /* UserEntity+CoreDataProperties.swift */; };
+		9C9CEB5E24B31B6800C2EEAF /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEB5624B31B6800C2EEAF /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +86,15 @@
 		9C9CEB3F24B318BB00C2EEAF /* MediaEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MediaEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9C9CEB4024B318BB00C2EEAF /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9C9CEB4824B3192000C2EEAF /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		9C9CEB4A24B31B3C00C2EEAF /* PageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
+		9C9CEB4E24B31B6800C2EEAF /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C9CEB4F24B31B6800C2EEAF /* MediaEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MediaEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C9CEB5024B31B6800C2EEAF /* ArticleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C9CEB5124B31B6800C2EEAF /* MediaEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MediaEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C9CEB5324B31B6800C2EEAF /* BlogArticleProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlogArticleProject.xcdatamodel; sourceTree = "<group>"; };
+		9C9CEB5424B31B6800C2EEAF /* ArticleEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C9CEB5524B31B6800C2EEAF /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C9CEB5624B31B6800C2EEAF /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +192,7 @@
 		9C9CEB1424B3130100C2EEAF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9C9CEB4A24B31B3C00C2EEAF /* PageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,6 +208,8 @@
 		9C9CEB1624B3132900C2EEAF /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				9C9CEB4D24B31B6800C2EEAF /* Model */,
+				9C9CEB5624B31B6800C2EEAF /* DatabaseHelper.swift */,
 				9C9CEB3A24B3189B00C2EEAF /* Model */,
 			);
 			path = Database;
@@ -222,6 +243,20 @@
 			isa = PBXGroup;
 			children = (
 				9C9CEB4824B3192000C2EEAF /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C9CEB4D24B31B6800C2EEAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C9CEB4E24B31B6800C2EEAF /* UserEntity+CoreDataClass.swift */,
+				9C9CEB4F24B31B6800C2EEAF /* MediaEntity+CoreDataClass.swift */,
+				9C9CEB5024B31B6800C2EEAF /* ArticleEntity+CoreDataProperties.swift */,
+				9C9CEB5124B31B6800C2EEAF /* MediaEntity+CoreDataProperties.swift */,
+				9C9CEB5224B31B6800C2EEAF /* BlogArticleProject.xcdatamodeld */,
+				9C9CEB5424B31B6800C2EEAF /* ArticleEntity+CoreDataClass.swift */,
+				9C9CEB5524B31B6800C2EEAF /* UserEntity+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,15 +397,24 @@
 				9C9CEB4324B318BB00C2EEAF /* UserEntity+CoreDataClass.swift in Sources */,
 				9C9CEB4424B318BB00C2EEAF /* MediaEntity+CoreDataClass.swift in Sources */,
 				9C9CEB4524B318BB00C2EEAF /* MediaEntity+CoreDataProperties.swift in Sources */,
+				9C9CEB5C24B31B6800C2EEAF /* ArticleEntity+CoreDataClass.swift in Sources */,
+				9C9CEB5B24B31B6800C2EEAF /* BlogArticleProject.xcdatamodeld in Sources */,
 				9C9CEB2224B3149E00C2EEAF /* PageViewController.swift in Sources */,
 				9C9CEB3724B316C400C2EEAF /* IntExtension.swift in Sources */,
 				9C9CEB2124B3149E00C2EEAF /* ArticleViewController.swift in Sources */,
+				9C9CEB4B24B31B3E00C2EEAF /* PageViewModel.swift in Sources */,
 				9C9CEB1F24B3149E00C2EEAF /* ArticleTableViewCell.swift in Sources */,
+				9C9CEB5924B31B6800C2EEAF /* ArticleEntity+CoreDataProperties.swift in Sources */,
 				9C9CEB3924B316C400C2EEAF /* StringExtension.swift in Sources */,
+				9C9CEB5D24B31B6800C2EEAF /* UserEntity+CoreDataProperties.swift in Sources */,
 				9C9CEAE124B30D1300C2EEAF /* AppDelegate.swift in Sources */,
 				9C9CEB3824B316C400C2EEAF /* ImageViewExtension.swift in Sources */,
+				9C9CEB5824B31B6800C2EEAF /* MediaEntity+CoreDataClass.swift in Sources */,
 				9C9CEB4224B318BB00C2EEAF /* ArticleEntity+CoreDataClass.swift in Sources */,
+				9C9CEB5724B31B6800C2EEAF /* UserEntity+CoreDataClass.swift in Sources */,
 				9C9CEB4924B3192000C2EEAF /* Article.swift in Sources */,
+				9C9CEB5A24B31B6800C2EEAF /* MediaEntity+CoreDataProperties.swift in Sources */,
+				9C9CEB5E24B31B6800C2EEAF /* DatabaseHelper.swift in Sources */,
 				9C9CEB2C24B3167200C2EEAF /* ServiceHelper.swift in Sources */,
 				9C9CEB4624B318BB00C2EEAF /* UserEntity+CoreDataProperties.swift in Sources */,
 				9C9CEB4124B318BB00C2EEAF /* ArticleEntity+CoreDataProperties.swift in Sources */,
@@ -704,6 +748,16 @@
 				9C9CEAE824B30D1300C2EEAF /* BlogArticleProject.xcdatamodel */,
 			);
 			currentVersion = 9C9CEAE824B30D1300C2EEAF /* BlogArticleProject.xcdatamodel */;
+			path = BlogArticleProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		9C9CEB5224B31B6800C2EEAF /* BlogArticleProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C9CEB5324B31B6800C2EEAF /* BlogArticleProject.xcdatamodel */,
+			);
+			currentVersion = 9C9CEB5324B31B6800C2EEAF /* BlogArticleProject.xcdatamodel */;
 			path = BlogArticleProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

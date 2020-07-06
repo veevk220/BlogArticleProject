@@ -17,6 +17,7 @@ class PageViewController: UIPageViewController {
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     
     var viewControllerList : [UIViewController]?
+    var pageViewModel: PageViewModel?
     
     // MARK: - View Methods
     
@@ -33,8 +34,14 @@ class PageViewController: UIPageViewController {
         self.dataSource = self
         self.view.backgroundColor = UIColor.white
         
+        pageViewModel = PageViewModel(delegate: self)
+        pageViewModel?.getControllerList()
+        
         activityIndicatorView.center = self.view.center
         self.view.addSubview(activityIndicatorView)
+        
+        //        self.preparePageViewController()
+        
     }
     
     // MARK: - Static Methods
@@ -87,3 +94,11 @@ extension PageViewController: UIPageViewControllerDataSource {
     
 }
 
+// MARK: - PageViewModel Protocol Extension
+
+extension PageViewController: PageViewModelProtocol {
+    func viewControllerList(viewControllerList: [ArticleViewController]?) {
+        self.viewControllerList = viewControllerList
+        self.preparePageViewController()
+    }
+}

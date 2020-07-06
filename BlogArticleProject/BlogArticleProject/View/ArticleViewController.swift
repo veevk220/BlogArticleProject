@@ -14,6 +14,7 @@ class ArticleViewController: UIViewController {
     
     @IBOutlet private weak var articleTableView: UITableView!
     private static let cellIdentifier = "ArticleTableViewCell"
+    var articleArray: [Article]?
     
     // MARK: - Static Methods
     
@@ -42,14 +43,20 @@ class ArticleViewController: UIViewController {
 
 extension ArticleViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        guard let articleArray = articleArray else {
+            self.articleTableView.isHidden = true
+            return 0
+        }
+        self.articleTableView.isHidden = articleArray.count == 0
+        return articleArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: type(of: self).cellIdentifier) as? ArticleTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: type(of: self).cellIdentifier) as? ArticleTableViewCell , let articleArray = articleArray else {
             return UITableViewCell()
         }
         
+        cell.fillDataInCell(article: articleArray[indexPath.row])
         return cell
     }
     
